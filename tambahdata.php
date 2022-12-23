@@ -13,7 +13,7 @@ $sql = "INSERT INTO list_mahasiswa (nama, nim, prodi, angkatan, email, alamat) V
 
 if ($koneksi->query($sql) == TRUE) {
     echo "<p class='alert alert-success text-center'><b>Registrasi Akun Anda Berhasil
-    <a href = 'datamahasiswa.php' class='btn btn-primary'>Kembali</a></b></p>";
+    <a href = 'datamahasiswa.php' class='btn btn-secondary'>Kembali</a></b></p>";
 } else {
     echo "Terjadi kesalahan: " . $sql . "<br/>" . $koneksi->error;
 }
